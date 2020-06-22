@@ -1,32 +1,29 @@
 """
-Program: this_file_name.py
-Author:  Firstname Lastname
-Date: MM/DD/YYYY
+Program: set_membership.py
+Author:  Spencer Cress
+Date: 06/22/2020
 
-Change this description to be more relevant.
-This program creates a function that prints 'Hello World'
-as output.  The function is then called.
 """
 
 
 def in_set(a_set, an_element):
+
     """
     Use reST style.
-    :param a_set: this is what the first parameter represents
+    :param a_set: a set to be fed into the function
     :param an_element: an element that might be in the set
     :returns: Boolean if the item is in a set
     """
-    pass
+    # my_boolean = False
+    return an_element in a_set
 
+
+my_set = set('jklmn')
+my_search = 'k'
+# print('k' in my_set)
 
 if __name__ == '__main__':
-    #call our functions
-    hello_world()
-    boolean_value_variable = True
-    #store it as a variable since get_pi returns a value
-    pi_value = get_pi(boolean_value_variable)
-    #cast it as a string before printing!
-    print("The value of pi is " + str(pi_value))
+    in_set(my_set, my_search)
 
 
 
