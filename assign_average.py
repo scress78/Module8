@@ -3,7 +3,7 @@ Program: assign_average.py
 Author:  Spencer Cress
 Date: 06/22/2020
 
-
+This is the py file for the Selection using dictionaries assignment
 """
 """average = 0
 switch(average){
@@ -35,6 +35,12 @@ def assign_average(grade_percentage):
         letter_grade = 'A'
     if 90 > grade_percentage >= 80:
         letter_grade = 'B'
+    if 80 > grade_percentage >= 70:
+        letter_grade = 'C'
+    #if 90 > grade_percentage >= 80:
+    #    letter_grade = 'D'
+    #if 90 > grade_percentage >= 80:
+    #    letter_grade = 'F'
     return letter_grade
 
 
