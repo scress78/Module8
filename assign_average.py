@@ -31,8 +31,10 @@ def assign_average(grade_percentage):
         grade_percentage = float(grade_percentage)
     except ValueError:
         raise ValueError from None
-    if grade_percentage >= 90:
+    if 120 >= grade_percentage >= 90:
         letter_grade = 'A'
+    if 90 > grade_percentage >= 80:
+        letter_grade = 'B'
     return letter_grade
 
 
