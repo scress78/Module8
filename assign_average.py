@@ -26,11 +26,14 @@ def assign_average(grade_percentage):
     :returns: A letter grade based on a percentage
     :raises keyError: raises an exception
     """
+    letter_grade = ''
     try:
         grade_percentage = float(grade_percentage)
     except ValueError:
         raise ValueError from None
-    pass
+    if grade_percentage >= 90:
+        letter_grade = 'A'
+    return letter_grade
 
 
 if __name__ == '__main__':
