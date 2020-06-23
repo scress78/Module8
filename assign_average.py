@@ -18,6 +18,7 @@ switch(average){
     default: ...statements...
         break
  }"""
+a_dict = {'A': 4.0, 'B': 3.0, 'C': 2.0, 'D': 1.0, 'F': 0.0}
 
 
 def assign_average(grade_percentage):
@@ -46,5 +47,13 @@ def assign_average(grade_percentage):
     return letter_grade
 
 
+def assign_gpa(a_letter_grade):
+    gpa = 0.0
+    a_dict = {'A': 4.0, 'B': 3.0, 'C': 2.0, 'D': 1.0, 'F': 0.0}
+    gpa = a_dict.get(a_letter_grade)
+    return print(gpa)
+
+
 if __name__ == '__main__':
-    assign_average("Taco")
+    print(assign_average(100))
+    assign_gpa(assign_average(80))
