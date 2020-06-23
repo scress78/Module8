@@ -33,14 +33,16 @@ def assign_average(grade_percentage):
         raise ValueError from None
     if 120 >= grade_percentage >= 90:
         letter_grade = 'A'
-    if 90 > grade_percentage >= 80:
+    elif 90 > grade_percentage >= 80:
         letter_grade = 'B'
-    if 80 > grade_percentage >= 70:
+    elif 80 > grade_percentage >= 70:
         letter_grade = 'C'
-    #if 90 > grade_percentage >= 80:
-    #    letter_grade = 'D'
-    #if 90 > grade_percentage >= 80:
-    #    letter_grade = 'F'
+    elif 70 > grade_percentage >= 60:
+        letter_grade = 'D'
+    elif 60 > grade_percentage:
+        letter_grade = 'F'
+    else:
+        letter_grade = 'Out of range 120-0... are we talking about the same test??'
     return letter_grade
 
 
