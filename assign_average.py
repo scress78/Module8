@@ -20,17 +20,18 @@ switch(average){
  }"""
 
 
-def assign_average():
+def assign_average(grade_percentage):
     """
-    Use reST style.
-
-    :param parameter_1: this is what the first parameter represents
-    :param parameter_2: this is what the second parameter represents
-    :returns: this is what is returned
+    :param grade_percentage: Grade percentage to be converted into letter grade
+    :returns: A letter grade based on a percentage
     :raises keyError: raises an exception
     """
+    try:
+        grade_percentage = float(grade_percentage)
+    except ValueError:
+        raise ValueError from None
     pass
 
 
 if __name__ == '__main__':
-    hello_world()
+    assign_average("Taco")

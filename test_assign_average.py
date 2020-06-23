@@ -28,7 +28,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(aa(13), 'F')
 
     def test_assert_average_Invalid(self):
-        self.assertRaises(aa('Taco'), ValueError)
+        with self.assertRaises(ValueError):
+            aa("Taco")
+
 
 
 
